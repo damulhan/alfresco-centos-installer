@@ -1,10 +1,9 @@
 
+originally forked from https://github.com/aborroy/alfresco-ubuntu-installer
 
-## originally forked from https://github.com/aborroy/alfresco-ubuntu-installer
+##
 
----
-
-# Alfresco installation in Ubuntu using ZIP Distribution Files
+# Alfresco installation in CentOS (or Rocky Linux or so) using ZIP Distribution Files
 
 Alfresco Platform provides flexibility in deployment, accommodating various infrastructures and operational preferences.
 
@@ -69,8 +68,12 @@ This project provides a collection of `bash` scripts designed to automate variou
    - Script: [09-build_aca.sh](scripts/09-build_aca.sh)
    - Description: Builds static website from NodeJS application ACA. *This task can be performed in a separate server or machine.*
 
-10. **Nginx Installation**
+10.1. **Nginx Installation**
    - Script: [10-install_nginx.sh](scripts/10-install_nginx.sh)
+   - Description: Installs web server for ACA and configure web proxy for Alfresco and Share web applications.
+
+10.2. **Apache2 Installation** (option)
+   - Script: [10-install_nginx.sh](scripts/10-install_apache2.sh)
    - Description: Installs web server for ACA and configure web proxy for Alfresco and Share web applications.
 
 11. **Start Services**
@@ -79,7 +82,7 @@ This project provides a collection of `bash` scripts designed to automate variou
 
 ## Usage
 
-Each script can be executed individually in a bash shell. Despiste user `ubuntu` is expected to be used, ensure you have the necessary permissions (e.g., using `sudo` where required).
+Each script can be executed individually in a bash shell. Despiste user `alfresco` is expected to be used, ensure you have the necessary permissions (e.g., using `sudo` where required).
 
 ```bash
 bash scripts/01-install_postgres.sh
