@@ -68,12 +68,12 @@ This project provides a collection of `bash` scripts designed to automate variou
    - Script: [09-build_aca.sh](scripts/09-build_aca.sh)
    - Description: Builds static website from NodeJS application ACA. *This task can be performed in a separate server or machine.*
 
-10.1. **Nginx Installation**
-   - Script: [10-install_nginx.sh](scripts/10-install_nginx.sh)
+10. **Nginx Installation**
+   - Script: [10-install_nginx.sh](scripts/10.1-install_nginx.sh)
    - Description: Installs web server for ACA and configure web proxy for Alfresco and Share web applications.
 
-10.2. **Apache2 Installation** (option)
-   - Script: [10-install_nginx.sh](scripts/10-install_apache2.sh)
+10. **Apache2 Installation** (option)
+   - Script: [10-install_nginx.sh](scripts/10.2-install_apache2.sh)
    - Description: Installs web server for ACA and configure web proxy for Alfresco and Share web applications.
 
 11. **Start Services**
@@ -95,6 +95,7 @@ bash scripts/07-install_solr.sh
 bash scripts/08-install_transform.sh
 bash scripts/09-build_aca.sh
 bash scripts/10-install_nginx.sh
+# bash scripts/10-install_apache2.sh
 ```
 
 Although the `11-start_services.sh` script includes the sequence for executing the services, it is recommended to run each line manually. This allows you to verify that each service is up and running correctly before proceeding to the next one.
