@@ -69,11 +69,11 @@ This project provides a collection of `bash` scripts designed to automate variou
    - Description: Builds static website from NodeJS application ACA. *This task can be performed in a separate server or machine.*
 
 10. **Nginx Installation**
-   - Script: [10-install_nginx.sh](scripts/10.1-install_nginx.sh)
+   - Script: [10-install_nginx.sh](scripts/10-install_nginx.sh)
    - Description: Installs web server for ACA and configure web proxy for Alfresco and Share web applications.
 
-10. **Apache2 Installation** (option)
-   - Script: [10-install_nginx.sh](scripts/10.2-install_apache2.sh)
+10. **Apache2 Installation** (options)
+   - Script: [10-install_apache2.sh](scripts/10-install_apache2.sh)
    - Description: Installs web server for ACA and configure web proxy for Alfresco and Share web applications.
 
 11. **Start Services**
